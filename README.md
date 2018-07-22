@@ -10,8 +10,11 @@ https://neat-python.readthedocs.io/en/latest/
 https://www.pygame.org/docs/
 
 I wrote my own Flappy Bird clone and use the NEAT implementation to train my population.  
-I use the x distance to the next pipe and the y distance to the next hole as inputs for the neural network.  
-We have two possible output actions: Wait or Flap.   
+I use the following inputs:
+ - x distance to the next pipe
+ - y distance to the next gap
+
+The possible outputs are either flap or wait.  
 
 First run:   
 flappy_bird_neat.py <visualize=True/False>
